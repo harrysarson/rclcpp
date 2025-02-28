@@ -14,6 +14,7 @@
 
 #include <memory>
 #include <string>
+#include <stdio.h>
 #include <utility>
 
 #include "rcl_logging_interface/rcl_logging_interface.h"
@@ -32,6 +33,7 @@ namespace rclcpp
 Logger
 get_logger(const std::string & name)
 {
+  printf("Hello from get_logger with name = '%s'\n", name.c_str()); 
 #if RCLCPP_LOGGING_ENABLED
   return rclcpp::Logger(name);
 #else
