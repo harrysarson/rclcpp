@@ -38,7 +38,7 @@ namespace rclcpp
 namespace topic_statistics
 {
 
-constexpr const char kDefaultPublishTopicName[]{"/statistics"};
+constexpr const char kDefaultPublishTopicName[]{"/statistics-custom"};
 constexpr const std::chrono::milliseconds kDefaultPublishingPeriod{std::chrono::seconds(1)};
 
 using libstatistics_collector::collector::GenerateStatisticMessage;
